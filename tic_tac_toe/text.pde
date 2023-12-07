@@ -28,13 +28,13 @@ void textSetup()
    String[] fontList = PFont.list(); //To list all fonts available on system
    printArray(fontList); //For listing all possible fonts to choose, then createFont
    */
-  generalFont = createFont ("Harrington", 55); //Verify font exists
+  generalFont = createFont ("Arial", 55); //Verify font exists
   //Tools / Create Font / Find Font / Do Not Press "OK", known bug
 }//End textSetup()
 //
-void preDrawText(float height, color ink, int alignHorizontal, int alignVertical, PFont font)
+void preDrawText(float height, color red, int alignHorizontal, int alignVertical, PFont font)
 {
-  fill(ink); //Ink, hexidecimal copied from Color Selector
+  fill(red); //Ink, hexidecimal copied from Color Selector
   textAlign (alignHorizontal, alignVertical); //Align X&Y, see Processing.org / Reference
   //Values: [LEFT | CENTER | RIGHT] & [TOP | CENTER | BOTTOM | BASELINE]
   textFont(font, height); //Change the number until it fits, largest font size
