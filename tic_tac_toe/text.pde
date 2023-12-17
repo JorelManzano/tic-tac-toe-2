@@ -41,9 +41,9 @@ void preDrawText(float height, color red, int alignHorizontal, int alignVertical
   //textFont() has option to combine font declaration with textSize()
 }//End preDrawText
 //
-void textDraw(float height, color ink, int alignHorizontal, int alignVertical, PFont font, String string, float multiplier, float rectX, float rectY, float rectWidth, float rectHeight)
+void textDraw(float height, color red, int alignHorizontal, int alignVertical, PFont font, String string, float multiplier, float rectX, float rectY, float rectWidth, float rectHeight)
 {
-  preDrawText(height, ink, alignHorizontal, alignVertical, font);
+  preDrawText(height, red, alignHorizontal, alignVertical, font);
   //textSize: textWidth(STRING), rectWidth, startingFontSize
   textSize( textCalculator(height, string, rectWidth, multiplier) );
   text(string, rectX, rectY, rectWidth, rectHeight);
