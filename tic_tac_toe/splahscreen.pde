@@ -1,4 +1,4 @@
-void splashScreen() {
+d splashScreen() {
   /* Note: any visually-based code running in SetUp() controlled by MouseClick
    - background image
    */

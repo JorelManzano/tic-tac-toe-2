@@ -6,8 +6,8 @@
 void scoreBoardSetup() {
   //
   //Scoreboard Numbers
-   textDraw(height, purpleInk, CENTER, CENTER, generalFont, x, 0.3, xSideNameX, xSideNameY, xSideNameWidth, xSideNameHeight);
-  textDraw(height, purpleInk, CENTER, CENTER, generalFont, o, 0.3, oSideNameX, oSideNameY, oSideNameWidth, oSideNameHeight);
+  textDraw(height, purpleInk, CENTER, CENTER, generalFont, xWinsString, 0.6, xSideIntegerX, xSideIntegerY, xSideIntegerWidth, xSideIntegerHeight);
+  textDraw(height, purpleInk, CENTER, CENTER, generalFont, oWinsString, 0.6, oSideIntegerX, oSideIntegerY, oSideIntegerWidth, oSideIntegerHeight);
   //
 } //End scoreBoardDraw
 //
@@ -15,8 +15,8 @@ void scoreBoardDraw() {
   //
   xWinsString = String.valueOf ( xWinsInt ); //Method one: int to string
   oWinsString = Integer.toString ( oWinsInt ); //Method two: int to string
-  println("X", xWinsString, xWinsInt, counter, someoneWinsReset);
-  println("O", oWinsString, oWinsInt);
+  //println("X", xWinsString, xWinsInt, counter, someoneWinsReset);
+  //println("O", oWinsString, oWinsInt);
   //Scoreboard Names
   textDraw(height, purpleInk, CENTER, CENTER, generalFont, x, 0.3, xSideNameX, xSideNameY, xSideNameWidth, xSideNameHeight);
   textDraw(height, purpleInk, CENTER, CENTER, generalFont, o, 0.3, oSideNameX, oSideNameY, oSideNameWidth, oSideNameHeight);

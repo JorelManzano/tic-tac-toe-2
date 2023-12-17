@@ -27,7 +27,7 @@ void setup() {
 } //End setup
 //
 void draw() {
-  if ( OS_On == true ) splashScreen();
+  if ( OS_On == true) splashScreen();
 } //End draw
 //
 void keyPressed() {
