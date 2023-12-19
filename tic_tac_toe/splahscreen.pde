@@ -1,4 +1,4 @@
-d splashScreen() {
+void splashScreen() {
   /* Note: any visually-based code running in SetUp() controlled by MouseClick
    - background image
    */
@@ -18,6 +18,9 @@ d splashScreen() {
   }
   if ( someoneWinsReset==true ) println( "Game Over" );
   scoreBoardDraw(); //See Score Board
+  //
+  twoInRowRecommendation();
+  printArray(XOrder);
   //
 } //End Splash Screen
 //
